@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.add_notes {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.sidebar {
+  border-right: 1px solid #ccc;
+  padding: 10px 0;
+}
+.sidebar h3 {
+  text-align: center;
+}
+.main {
+  padding: 20px 40px;
+}
+.navbar-default {
+  margin-bottom: 0;
+}
+.main-wrapper {
+  display: flex;
+  height: 600px;
+}
+.card:first-of-type {
+  border-top: 1px solid #ccc;
+}
+.card {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 50px 10px 20px;
+  position: relative;
+}
+.card .form-group {
+  margin-bottom: 0;
+}
+.note-edit-buttons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.note-edit-buttons .btn {
+  display: block;
+  color: #666;
+  background: none;
+  border: 0;
+  padding: 0px 10px;
+  font-size: 12px;
+}
+.note-edit-buttons .btn.edit {
+  margin-bottom: 15px;
+}
+.note-edit-form input {
+  margin-bottom: 5px;
+}
+.note-edit-form button {
+  margin-top: 5px;
+  padding: 0 10px;
+}
+.add-note {
+  border: 1px solid #ccc;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
