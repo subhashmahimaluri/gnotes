@@ -5,6 +5,18 @@ import AddNoteForm from './AddNoteForm';
 import NotesList from './NotesList';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      note: {}
+    }
+  }
+
+  editNote = (note) => {
+    this.setState({note});
+  }
+
   render() {
     return (
       <div>
@@ -12,10 +24,10 @@ class App extends Component {
           <div className="container-fluid">
             <div className="row main-wrapper">
               <div className="col-sm-5 col-md-3 sidebar">
-                <NotesList />
+                <NotesList doWhatever={this.editNote} />
               </div>
               <div className="col-sm-7 col-md-9 main">
-                <AddNoteForm />
+                <AddNoteForm note={this.state.note} />
               </div>
             </div>
           </div>

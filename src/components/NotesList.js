@@ -12,7 +12,7 @@ export class NotesList extends Component {
         {
           this.props.notes.map(note => {
             return(
-              <Note key={note.id} note={note} />
+              <Note doWhatever={this.props.doWhatever} key={note.id} note={note} />
             )
           })
         }
